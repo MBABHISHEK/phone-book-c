@@ -38,8 +38,9 @@ void main()
   printf("\t\t*******************************************************************************************************\t\t\n");
   printf("\n\t\t\t\t\t\tWELCOME TO PHONE BOOK\n\n");
   printf("\t\t*******************************************************************************************************\t\t\n");
-  printf("\n\t\t\t\t\t\tTHE PROJECT DEVELOPED BY\n");
+  printf("\n\t\t\t\t\t\tTHE PROJECT IS DEVELOPED BY\n");
   printf("\n\t\t\t\t\t\t> ABHISHEK M B\n\n");
+  printf("\n\t\t\t\t\t\t> ANURAG G\n\n");
   printf("\t\t*******************************************************************************************************\t\t\n");
 l1:
   printf("ENTER 1 TO CREATE NEW PHONE BOOK AND 2 TO GET OLD PHONE BOOK\n");
@@ -128,7 +129,7 @@ void deletebyname(CAT *c)
   }
   char name[20];
   int flag=0, i;
-  printf("ENTER THE  NAME\n");
+  printf("ENTER THE NAME\n");
   scanf("%s", name);
 
   for (i = 0; i < count; i++)
@@ -182,9 +183,9 @@ void deletebynumber(CAT *c)
   printf("THE CONTACT NOT FOUND\n");
   else
   {
-    printf("THE THR CONTACT IS FOUND THE DETAILS OF CONTACTS ARE\n");
+    printf("THE CONTACT IS FOUND. THE DETAILS OF CONTACTS ARE\n");
     printf("NAME     \tNUMBER     \tID\n");
-    printf("%s\t%s\t%d\n", (c + i)->name, (c + i)->num, (c + i)->id);
+    printf("%8s\t%s\t%d\n", (c + i)->name, (c + i)->num, (c + i)->id);
 
   int k;
   for (k = i; k < count - 1; k++)
